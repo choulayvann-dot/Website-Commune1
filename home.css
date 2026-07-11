@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+.nav_bar{
+    position: relative;
+    padding: 10px;
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Bayon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav_bar ul {
+    display: flex;
+    list-style: none;
+}
+.nav_bar ul li a{
+    position: relative;
+    font-size: 20px;
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgb(70, 66, 66);
+}
+.nav_bar ul li a:hover,
+.nav_bar ul li a.active{
+    color: rgb(16, 125, 6);
+    transition: 0.3s;
+}
+.nav_bar ul li a::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(6, 106, 15);
+    width: 0;
+    height: 2px;
+    top: 30px;
+    left: 0;
+}
+.nav_bar ul li a:hover::after,
+.nav_bar ul li a.active::after{
+    width: 100%;
+    transition: 0.3s;
+    left: 0;
+}
+.nav_bar button{
+    border: none;
+    background-color: rgb(34, 132, 12);
+    color: whitesmoke;
+    padding: 5px 35px;
+    font-size: 15px;
+    font-family: "Freehand", cursive;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.nav_bar button:hover{
+    background-color: rgb(6, 100, 22);
+    color: white;
+}
+.nav_bar h1{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.nav_bar h1 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 5px;
+    left: -50px;
+}
+.take_home{
+    position: relative;
+}
+.take_home img{
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+}
+.take_home .two_bwt{
+    display: flex;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 230px;
+}
+.take_home .two_bwt .first_bwt{
+    font-family: "Metal", serif;
+    margin-left: 100px;
+}
+.take_home .two_bwt .first_bwt h3{
+    color: rgb(219, 219, 14);
+    font-size: 40px;
+}
+.take_home .two_bwt .first_bwt h1{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+.take_home .two_bwt .first_bwt h4{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.take_home .two_bwt .first_bwt .two_btn{
+    display: flex;
+    margin-top: 50px;
+}
+.take_home .two_bwt .first_bwt .two_btn .first button{
+    background-color: rgb(9, 138, 9);
+    padding: 15px 45px;
+    border-radius: 30px;
+    color: rgb(242, 244, 247);
+    border: none;
+    font-size: 15px;
+    font-family: "Taprom", system-ui;
+    cursor: pointer;
+}
+.take_home .two_bwt .first_bwt .two_btn .first button:hover{
+    background-color: rgb(39, 188, 39);
+    transition: 0.3s;
+}
+.take_home .two_bwt .first_bwt .two_btn .second button{
+    background-color: transparent;
+    padding: 12px 45px;
+    border-radius: 30px;
+    color: rgb(242, 244, 247);
+    border: 2px solid white;
+    font-size: 15px;
+    font-family: "Taprom", system-ui;
+    margin-left: 15px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.take_home .two_bwt .first_bwt .two_btn .second button:hover{
+    background-color: rgb(8, 100, 8);
+    border: 2px solid rgb(8, 100, 8);
+    transition: 0.3s;
+}
+.take_home .two_bwt .two_bwt1{
+    background-color: rgb(247, 241, 232);
+    display: flex;
+    position: absolute;
+    left: 105%;
+    top: 400px;
+    color: rgb(5, 64, 3);
+    padding: 30px 30px;
+    border-radius: 20px;
+    width: 790px;
+}
+.take_home .two_bwt .two_bwt1 .three_small{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Metal", serif;
+}
+.take_home .two_bwt .two_bwt1 .three_small .icon{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: rgb(18, 170, 56);
+}
+.take_home .two_bwt .two_bwt1 .three_small .text{
+    margin-top: 13px;
+}
+.big_group{
+    background-color: beige;
+    padding-bottom: 100px;
+    position: relative;
+}
+.big_group .h1{
+    padding-top: 50px;
+    text-align: center;
+    color: #0b690b;
+    font-family: "Taprom", system-ui;
+}
+.big_group hr{
+    height: 2px;
+    background-color: #0b690b;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 170px;
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 650px;
+}
+.big_group .fa-seedling{
+    position: absolute;
+    left: 725px;
+    top: 112px;
+    background-color: beige;
+    padding: 5px;
+    color: #0b690b;
+}
+.big_group .five_group{
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+}
+.big_group .five_group .group{
+    position: relative;
+    display: flex;
+}
+.big_group .five_group .group button{
+    width: 260px;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.big_group .five_group .group button:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.big_group .five_group .group button img{
+    width: 260px;
+    height: 200px;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+.big_group .five_group .group .text_big1{
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    z-index: 1;
+}
+.big_group .five_group .group button::after{
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 19px;
+    background: linear-gradient(
+        to right,
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.85) 35%,
+        rgba(255,255,255,0.3) 65%,
+        rgba(255,255,255,0) 100%
+    );
+    width: 250px;
+    height: 190px;
+}
+.big_group .five_group .group button:hover::after{
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 0px;
+    background: linear-gradient(
+        to right,
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.85) 35%,
+        rgba(255,255,255,0.3) 65%,
+        rgba(255,255,255,0) 100%
+    );
+    width: 250px;
+    height: 190px;
+}
+.big_group .five_group .group .text_big2{
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    z-index: 1;
+}
+.big_group .five_group .group .text_big3{
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    z-index: 1;
+}
+.big_group .five_group .group .text_big4{
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    z-index: 1;
+}
+.big_group .five_group .group .text_big5{
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    z-index: 1;
+}
+.big_group .five_group .group .icon1{
+    background-color: #0b690b;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+.big_group .five_group .group h1{
+    font-size: 17px;
+    margin-top: 5px;
+    font-family: "Metal", serif;
+}
+.big_group .five_group .group h3{
+    font-size: 12px;
+    font-family: "Metal", serif;
+}
+.last_group{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    font-family: "Metal", serif;
+}
+
+.last_group .special_group1 .news{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.last_group .special_group1 .news::after{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 50px;
+    left: -3px;
+    top: 4px;
+    border-radius: 3px;
+    background-color: green;
+}
+.last_group .special_group1 .news::before{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    left: 20px;
+    top: 60px;
+    border-radius: 3px;
+    background-color: green;
+}
+.last_group .special_group1 .news .all_watch{
+    margin-top: 20px;
+}
+.last_group .special_group1 .news .all_watch a{
+    text-decoration: none;
+    color: #0b690b;
+}
+.last_group .special_group1 .news .all_watch a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.last_group .special_group1 .three_photo{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+}
+.last_group .special_group1 .three_photo .photo img{
+    width: 170px;
+    height: 120px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+.last_group .special_group1 .three_photo .photo h3{
+    position: absolute;
+    top: 5px;
+    left: 470px;
+    font-size: 10px;
+    z-index: 999;
+    color: white;
+}
+.last_group .special_group1 .three_photo .photo::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 70px;
+    background-color: #0b690b;
+    top: 0;
+    left: 460px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.special_group2{
+    display: flex;
+    width: 100%;
+}
+.special_group2 .map{
+    position: relative;
+    background-color: #0b690b;
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 40px;
+    border: 3px solid white;
+}
+.special_group2 .map img{
+    width: 195px;
+    margin-left: 283.3px;
+    height: 144.5px;
+    margin-top: 17.3px;
+}
+.special_group2 .map .absolute{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+.special_group2 .map .absolute .icon_map .fa-location-dot{
+    font-size: 30px;
+    color: yellow;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid rgb(10, 89, 7);
+    height: 40px;
+    margin-top: 10px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 30px;
+}
+.special_group2 .map .absolute .tex_map{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: white;
+}
+.special_group2 .map .absolute .tex_map h4{
+    margin-left: -40px;
+}
+.special_group2 .map .absolute .tex_map button{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px 20px;
+    margin-left: -40px;
+    border-radius: 40px;
+    color: white;
+    font-size: 10px;
+    font-family: "Metal", serif;
+    cursor: pointer;
+}
+.special_group2 .map .absolute .tex_map button:hover{
+    background-color: #73d973;
+    border: 2px solid #73d973;
+    transition: 0.3s;
+}
+.group_wave {
+    position: relative;
+    background-color: #edf1cb;
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 40px;
+    border: 3px solid white;
+}
+.group_wave .text_last{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+.text_last .icon_map .fa-water{
+    font-size: 25px;
+    color: rgb(17, 137, 13);
+    margin-left: 0px;
+    background-color: transparent;
+    border: 2px solid rgb(10, 89, 7);
+    height: 40px;
+    margin-top: 10px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 30px;
+}
+.group_wave .text_last .text_map{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.group_wave .text_last .text_map h3{
+    margin-top: 17px;
+}
+.group_wave .text_last .text_map h4{
+    margin-left: -30px;
+    margin-top: 5px;
+}
+.group_wave .text_last .text_map button{
+    background-color: transparent;
+    border: 2px solid green;
+    padding: 0px 20px;
+    border-radius: 30px;
+    margin-left: -30px;
+    margin-bottom: 5px;
+    font-family: "Metal", serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+.group_wave .text_last .text_map button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+.group_wave .img_last{
+    display: flex;
+}
+.group_wave .img_last .img1 img{
+    width: 70px;
+    height: 120px;
+    border: 2px solid #ffffff;
+    margin-left: 206px;
+    margin-top: 25px;
+}
+.group_wave .img_last .img2 img{
+    width: 70px;
+    height: 120px;
+    border: 2px solid white;
+}

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.nav_bar{
+    position: relative;
+    padding: 10px;
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Bayon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav_bar ul {
+    display: flex;
+    list-style: none;
+}
+.nav_bar ul li a{
+    position: relative;
+    font-size: 20px;
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgb(70, 66, 66);
+}
+.nav_bar ul li a:hover,
+.nav_bar ul li a.active{
+    color: rgb(16, 125, 6);
+    transition: 0.3s;
+}
+.nav_bar ul li a::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(6, 106, 15);
+    width: 0;
+    height: 2px;
+    top: 30px;
+    left: 0;
+}
+.nav_bar ul li a:hover::after,
+.nav_bar ul li a.active::after{
+    width: 100%;
+    transition: 0.3s;
+    left: 0;
+}
+.nav_bar button{
+    border: none;
+    background-color: rgb(34, 132, 12);
+    color: whitesmoke;
+    padding: 5px 35px;
+    font-size: 15px;
+    font-family: "Freehand", cursive;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.nav_bar button:hover{
+    background-color: rgb(6, 100, 22);
+    color: white;
+}
+.nav_bar h1{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.nav_bar h1 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 5px;
+    left: -50px;
+}
+.back{
+    background-color: rgb(212, 208, 197);
+    margin-top: 50px;
+    height: 500px;
+}
+.back .text h1{
+    padding-top: 150px;
+    padding-left: 100px;
+    font-family: "Taprom", system-ui;
+    font-size: 35px;
+}
+.back .text p{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+.location{
+    background-color: rgb(231, 225, 215);
+}
+.location .two_blog{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.location .two_blog .left_blog h3{
+    color: rgb(235, 139, 61);
+    font-size: 20px;
+    font-family: "Bayon", sans-serif;
+}
+.location .two_blog .left_blog h1{
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: "Bayon", sans-serif;
+}
+.map{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.map button{
+    width: 80%;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px gray;
+    margin-bottom: 100px;
+}
+.map button img{
+    width: 100%;
+}
+.part_three{
+    width: 100%;
+}
+.part_three .two_part{
+    display: flex;
+    width: 100%;
+}
+.part_three .two_part .part-one{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.part_three .two_part .part-one img{
+    width: 700px;
+    height: 100%;
+    margin-left: 100px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.part_three .two_part .part-one .front{
+    position: absolute;
+    z-index: 1;
+    top: 430px;
+    left: 150px;
+}
+.part_three .two_part .part-one .front h2{
+    color: rgb(255, 255, 255);
+    margin-top: -60px;
+    font-size: 30px;
+    font-family: "Freehand", cursive;
+}
+.part_three .two_part .part-one .front p{margin-top: -10px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+.part_three .two_part .part_two {
+    margin-left: 50px;
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 50px;
+    background-color: rgb(238, 238, 217);
+    border-radius: 10px;
+    padding: 50px;
+    margin-right: 50px;
+}
+.part_three .two_part .part_two h3{
+    color: rgb(106, 211, 125);
+}
+.community_pulse{
+    background-color: rgb(243, 243, 233);
+    font-family: "Metal", serif;
+}
+.community_pulse .two_step{
+    padding-top: 100px;
+    display: flex;
+    margin-left: 100px;
+}
+.community_pulse .two_step .text2 h3{
+    color: rgb(200, 93, 51);
+}
+.community_pulse .two_step .text2 h1{
+    color: black;
+    font-size: 35px;
+}
+.community_pulse .two_step .button_right{
+    margin-left: 900px;
+}
+.community_pulse .two_step .button_right button{
+    font-family: "Metal", serif;
+    border: none;
+    background-color: rgb(243, 243, 233);
+    padding: 5px 20px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 2px 0 rgb(143, 138, 138);
+    border-radius: 5px;
+    cursor: pointer;
+}
